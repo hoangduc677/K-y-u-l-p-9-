@@ -1,0 +1,93 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial;
+}
+
+body{
+  background:#0d0d0d;
+  color:#fff;
+  scroll-behavior:smooth;
+}
+
+/* INTRO */
+#netflixIntro{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  z-index:9999;
+}
+
+#logo{
+  font-size:60px;
+  color:red;
+  animation:zoom 3s ease forwards;
+}
+
+@keyframes zoom{
+  0%{opacity:0; transform:scale(0.5);}
+  50%{opacity:1; transform:scale(1.2);}
+  100%{transform:scale(1);}
+}
+
+/* HERO */
+.hero{
+  position:relative;
+  height:100vh;
+}
+
+#bgVideo{
+  position:absolute;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:brightness(40%);
+}
+
+.hero-content{
+  position:relative;
+  text-align:center;
+  top:50%;
+  transform:translateY(-50%);
+}
+
+/* GALLERY */
+.grid{
+  column-count:2;
+  padding:10px;
+}
+
+.grid img{
+  width:100%;
+  margin-bottom:10px;
+  border-radius:10px;
+}
+
+/* CINEMATIC */
+.cinematic{
+  opacity:0;
+  transform:scale(0.9);
+  filter:blur(10px);
+  transition:1s;
+}
+
+.cinematic.show{
+  opacity:1;
+  transform:scale(1);
+  filter:blur(0);
+}
+
+section{
+  padding:40px;
+  text-align:center;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+}
