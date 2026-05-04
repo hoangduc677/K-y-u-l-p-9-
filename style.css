@@ -1,0 +1,36 @@
+body{
+  margin:0;
+  font-family:sans-serif;
+  background:black;
+  color:white;
+  text-align:center;
+}
+
+#intro{
+  position:fixed;
+  width:100%;
+  height:100%;
+  background:black;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:40px;
+  animation:fade 3s forwards;
+}
+
+@keyframes fade{
+  0%{opacity:1;}
+  100%{opacity:0; visibility:hidden;}
+}
+
+.hero{
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+
+.section img{
+  width:90%;
+  margin:10px;
+}
